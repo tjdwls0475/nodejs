@@ -1,0 +1,11 @@
+body {
+    color: #1613c0;
+    font-family: serif;
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: rgb(224, 253, 177);
+}
+footer {
+    color: #1275d1;
+    border-top: 1px solid #333333;
+}
