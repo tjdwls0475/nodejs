@@ -21,7 +21,7 @@ app.use(express.static(publicDir))
 
 app.get('/', (req, res)=>{
     res.render('index', {
-        제목: '미세먼지 정보 앱'
+        제목: 'Sock Shop Closed Temporarily'
     })
 })
 // app.get('/help', (req,res)=>{
