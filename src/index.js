@@ -31,6 +31,11 @@ app.get('/', (req, res)=>{
 //     res.send('express server를 작동하는 application입니다.')
 // })
 
-app.listen(port, ()=>{
-    console.log(`Server is up and running at port ${port}`)
-})
+// var server = app.listen(port, ()=>{
+//     console.log(`Server is up and running at port ${port}`)
+// })
+
+var server = app.listen(process.env.PORT || 5000, function () {
+    var port = server.address().port;
+    console.log("App now running in %s mode on port %d", app.get("env"), port);
+  });
