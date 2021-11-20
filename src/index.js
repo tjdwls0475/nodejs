@@ -19,7 +19,7 @@ hbs.registerPartials(partialsPath)
 
 app.use(express.static(publicDir))
 
-app.get('/', (req, res)=>{
+app.get('/app', (req, res)=>{
     res.render('index', {
         제목: 'Sock Shop Closed Temporarily'
     })
